@@ -27,6 +27,7 @@
 		2C107712249EFBFC007B82D9 /* Fox@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C107710249EFBFB007B82D9 /* Fox@3x.png */; };
 		2C107713249EFBFC007B82D9 /* Fox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C107711249EFBFC007B82D9 /* Fox@2x.png */; };
 		2C128525278BAE6F00425E01 /* NineAnimatorCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 2C128524278BAE6F00425E01 /* NineAnimatorCommon */; };
+		2C128526278BAE6F00425E01 /* NineAnimatorCommon in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C128524278BAE6F00425E01 /* NineAnimatorCommon */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2C128528278CC61900425E01 /* AppDelegate+CrashDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C128527278CC61900425E01 /* AppDelegate+CrashDelegate.swift */; };
 		2C12EDDB21BDE6B20064D2BD /* HalfFillViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12EDD721BDE6B20064D2BD /* HalfFillViewControllerProtocol.swift */; };
 		2C12EDDC21BDE6B20064D2BD /* HalfFillPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12EDD821BDE6B20064D2BD /* HalfFillPresentationController.swift */; };
@@ -128,6 +129,7 @@
 		2C86C1EB225D6F9F00950ABF /* SetupWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86C1EA225D6F9F00950ABF /* SetupWelcomeViewController.swift */; };
 		2C86C1EF225D7FB600950ABF /* SetupWhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86C1EE225D7FB600950ABF /* SetupWhatsNewViewController.swift */; };
 		2C8C8862284DF00300C85C9A /* NineAnimatorCoreServices in Frameworks */ = {isa = PBXBuildFile; productRef = 2C8C8861284DF00300C85C9A /* NineAnimatorCoreServices */; };
+		2C8C8864284E415900C85C9A /* NineAnimatorCoreServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C8C8861284DF00300C85C9A /* NineAnimatorCoreServices */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2C8E962323B9CE6A00415F92 /* AppDelegate+BackgroundRefreshTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E962223B9CE6A00415F92 /* AppDelegate+BackgroundRefreshTasks.swift */; };
 		2C8F6E802205E76D0047798B /* AnimePredictedEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F6E7F2205E76D0047798B /* AnimePredictedEpisodeTableViewCell.swift */; };
 		2C8F6E8222061CE30047798B /* OfflineAnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F6E8122061CE30047798B /* OfflineAnimeTableViewCell.swift */; };
@@ -211,6 +213,9 @@
 		2CE18B0E2374996800771A16 /* LibraryRecentlyWatchedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE18B0D2374996800771A16 /* LibraryRecentlyWatchedCell.swift */; };
 		2CE18B102374C7ED00771A16 /* LibraryTipGenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE18B0F2374C7ED00771A16 /* LibraryTipGenericCell.swift */; };
 		2CE18B122374D69200771A16 /* LibrarySceneController+Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE18B112374D69200771A16 /* LibrarySceneController+Tips.swift */; };
+		2CE2FDF4265070AB00319466 /* NineAnimatorNativeListServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D98426502C03009EFF76 /* NineAnimatorNativeListServices */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CE2FDF5265070AD00319466 /* NineAnimatorNativeParsers in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D980264CC192009EFF76 /* NineAnimatorNativeParsers */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CE2FDF6265070AE00319466 /* NineAnimatorNativeSources in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D982264CC192009EFF76 /* NineAnimatorNativeSources */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2CE5B8E0225ECAC200A2CF89 /* SetupFinishingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5B8DF225ECAC200A2CF89 /* SetupFinishingViewController.swift */; };
 		2CEA0BE821F66D49007EECC4 /* Continuity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA0BE721F66D49007EECC4 /* Continuity.swift */; };
 		2CEBE8FE22074401006A64CC /* UISearchBar+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBE8FD22074401006A64CC /* UISearchBar+Themable.swift */; };
@@ -254,6 +259,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2C8C8864284E415900C85C9A /* NineAnimatorCoreServices in Embed Frameworks */,
+				2C128526278BAE6F00425E01 /* NineAnimatorCommon in Embed Frameworks */,
+				2CE2FDF5265070AD00319466 /* NineAnimatorNativeParsers in Embed Frameworks */,
+				2CE2FDF6265070AE00319466 /* NineAnimatorNativeSources in Embed Frameworks */,
+				2CE2FDF4265070AB00319466 /* NineAnimatorNativeListServices in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
