@@ -221,6 +221,11 @@
 		BF9203DC25E07E6E00CB2D91 /* AudioBackgroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9203DB25E07E6E00CB2D91 /* AudioBackgroundController.swift */; };
 		BFF95F0A257C2DA8001F8484 /* SettingsSceneController+DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF95F09257C2DA8001F8484 /* SettingsSceneController+DocumentPicker.swift */; };
 		C6C60F57293F789100A6B682 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA1DD5D21E2B423009241CB /* HomeKit.framework */; platformFilter = ios; };
+		C6C60F59293F789500A6B682 /* NineAnimatorCommon in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C128524278BAE6F00425E01 /* NineAnimatorCommon */; };
+		C6C60F5B293F789600A6B682 /* NineAnimatorCoreServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C8C8861284DF00300C85C9A /* NineAnimatorCoreServices */; };
+		C6C60F5C293F789700A6B682 /* NineAnimatorNativeListServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D98426502C03009EFF76 /* NineAnimatorNativeListServices */; };
+		C6C60F5D293F789900A6B682 /* NineAnimatorNativeParsers in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D980264CC192009EFF76 /* NineAnimatorNativeParsers */; };
+		C6C60F5E293F789A00A6B682 /* NineAnimatorNativeSources in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D982264CC192009EFF76 /* NineAnimatorNativeSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +259,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C6C60F5B293F789600A6B682 /* NineAnimatorCoreServices in Embed Frameworks */,
+				C6C60F5D293F789900A6B682 /* NineAnimatorNativeParsers in Embed Frameworks */,
+				C6C60F5E293F789A00A6B682 /* NineAnimatorNativeSources in Embed Frameworks */,
+				C6C60F59293F789500A6B682 /* NineAnimatorCommon in Embed Frameworks */,
+				C6C60F5C293F789700A6B682 /* NineAnimatorNativeListServices in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2086,7 +2096,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ninila.test.NineAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2120,7 +2129,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ninila.test.NineAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
