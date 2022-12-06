@@ -172,7 +172,6 @@
 		2CB004272200B0FD00351B7E /* OfflineEpisodeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB004262200B0FD00351B7E /* OfflineEpisodeContent.swift */; };
 		2CB0042922024BDA00351B7E /* CachedAnimeArtworkRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0042822024BDA00351B7E /* CachedAnimeArtworkRetriver.swift */; };
 		2CB4AF96239AD1B700EE4EDA /* CachableAVAssetLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4AF95239AD1B700EE4EDA /* CachableAVAssetLoaderDelegate.swift */; };
-		2CB6704F249FCB26006C11A9 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA1DD5D21E2B423009241CB /* HomeKit.framework */; platformFilter = ios; };
 		2CB832FF28DFBD7B00AF64EC /* Handwriting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB832FD28DFBD7B00AF64EC /* Handwriting@3x.png */; };
 		2CB8330028DFBD7B00AF64EC /* Handwriting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB832FE28DFBD7B00AF64EC /* Handwriting@2x.png */; };
 		2CB9919421FEAC5D0055B7A7 /* DetailedEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9919321FEAC5D0055B7A7 /* DetailedEpisodeTableViewCell.swift */; };
@@ -221,6 +220,12 @@
 		52CADD6721BD86F40077BEB1 /* UITableView+DeselectRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CADD6621BD86F40077BEB1 /* UITableView+DeselectRows.swift */; };
 		BF9203DC25E07E6E00CB2D91 /* AudioBackgroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9203DB25E07E6E00CB2D91 /* AudioBackgroundController.swift */; };
 		BFF95F0A257C2DA8001F8484 /* SettingsSceneController+DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF95F09257C2DA8001F8484 /* SettingsSceneController+DocumentPicker.swift */; };
+		C6C60F57293F789100A6B682 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA1DD5D21E2B423009241CB /* HomeKit.framework */; platformFilter = ios; };
+		C6C60F59293F789500A6B682 /* NineAnimatorCommon in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C128524278BAE6F00425E01 /* NineAnimatorCommon */; };
+		C6C60F5B293F789600A6B682 /* NineAnimatorCoreServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2C8C8861284DF00300C85C9A /* NineAnimatorCoreServices */; };
+		C6C60F5C293F789700A6B682 /* NineAnimatorNativeListServices in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D98426502C03009EFF76 /* NineAnimatorNativeListServices */; };
+		C6C60F5D293F789900A6B682 /* NineAnimatorNativeParsers in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D980264CC192009EFF76 /* NineAnimatorNativeParsers */; };
+		C6C60F5E293F789A00A6B682 /* NineAnimatorNativeSources in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2CA0D982264CC192009EFF76 /* NineAnimatorNativeSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,12 +253,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2C6C4730238E1E00001E723C /* Embed Frameworks */ = {
+		C6C60F5A293F789500A6B682 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C6C60F5B293F789600A6B682 /* NineAnimatorCoreServices in Embed Frameworks */,
+				C6C60F5D293F789900A6B682 /* NineAnimatorNativeParsers in Embed Frameworks */,
+				C6C60F5E293F789A00A6B682 /* NineAnimatorNativeSources in Embed Frameworks */,
+				C6C60F59293F789500A6B682 /* NineAnimatorCommon in Embed Frameworks */,
+				C6C60F5C293F789700A6B682 /* NineAnimatorNativeListServices in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,12 +580,12 @@
 				2CE1371526B31CA400F59CB0 /* AppCenterCrashes in Frameworks */,
 				2C8C8862284DF00300C85C9A /* NineAnimatorCoreServices in Frameworks */,
 				2C9325C224ACDDD3001E3708 /* SwordRPC in Frameworks */,
-				2CB6704F249FCB26006C11A9 /* HomeKit.framework in Frameworks */,
 				2CA0D98526502C03009EFF76 /* NineAnimatorNativeListServices in Frameworks */,
 				2CE1371326B31CA400F59CB0 /* AppCenterDistribute in Frameworks */,
 				2CA0D983264CC192009EFF76 /* NineAnimatorNativeSources in Frameworks */,
 				2C128525278BAE6F00425E01 /* NineAnimatorCommon in Frameworks */,
 				2CFC16AE265063480052FE8A /* ViewAnimator in Frameworks */,
+				C6C60F57293F789100A6B682 /* HomeKit.framework in Frameworks */,
 				2CE1371726B31CA400F59CB0 /* AppCenterAnalytics in Frameworks */,
 				2CA0D981264CC192009EFF76 /* NineAnimatorNativeParsers in Frameworks */,
 			);
@@ -1291,7 +1301,7 @@
 				2C4ABC4D21B5881E009B4D47 /* Frameworks */,
 				2C4ABC4E21B5881E009B4D47 /* Resources */,
 				2CB67050249FD0BC006C11A9 /* Process macCatalyst Entitlements */,
-				2C6C4730238E1E00001E723C /* Embed Frameworks */,
+				C6C60F5A293F789500A6B682 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
