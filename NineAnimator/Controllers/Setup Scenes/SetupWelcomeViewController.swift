@@ -103,20 +103,38 @@ class SetupWelcomeViewController: UIViewController {
                     [weak self] _ in self?.availabilityDataFetchingTask = nil
                 }
                 .error {
-                    [weak self] error in
+                    [weak self] _ in
                     guard let self = self else {
                         return
                     }
                     
-                    // Indicates that there is an error
+                    // Dismiss automatically if there was no user interaction
+                    if !self.requiredConfigurations && Self.dismissConfigurationAfterAvailabilityDataRetrival {
+                        return self.dismiss(animated: true)
+                    }
+                    
+                    // Restore button states
                     UIView.animate(withDuration: 0.3) {
                         self.continueButton.isEnabled = true
-                        self.skipSetupButton.isEnabled = false
-                        self.welcomeTitleLabel.text = "NineAnimator Unavailable"
-                        self.setupLicenseLabel.text = "NineAnimator is unable to continue because we failed to retrieve a critical piece of data that is required for the app to function: \(error.localizedDescription)"
-                        self.continueButton.setTitle("Retry", for: .normal)
-                        self.requiredConfigurations = true // Window won't dismiss automatically after this
+                        self.skipSetupButton.isEnabled = true
+                        self.welcomeTitleLabel.text = "Welcome to NineAnimator"
+                        self.setupLicenseLabel.text = self.licenseText
+                        self.continueButton.setTitle("Continue", for: .normal)
                     }
+//                    [weak self] error in
+//                    guard let self = self else {
+//                        return
+//                    }
+//
+//                    // Indicates that there is an error
+//                    UIView.animate(withDuration: 0.3) {
+//                        self.continueButton.isEnabled = true
+//                        self.skipSetupButton.isEnabled = false
+//                        self.welcomeTitleLabel.text = "NineAnimator Unavailable"
+//                        self.setupLicenseLabel.text = "NineAnimator is unable to continue because we failed to retrieve a critical piece of data that is required for the app to function: \(error.localizedDescription)"
+//                        self.continueButton.setTitle("Retry", for: .normal)
+//                        self.requiredConfigurations = true // Window won't dismiss automatically after this
+//                    }
                 }
                 .finally {
                     [weak self] _ in
